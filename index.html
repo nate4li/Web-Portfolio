@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewpoint" content="with=device-width, intital-scale=1.8">
+            <link rel="stylesheet" href="styles.css">
+            <title>Nates page</title>
+        </head>
+        <body>
+            
+            <div class="column-L">
+                <div id="logo_block">
+                    <img src="logos.jpg" alt="nav logo" id="nav-logo">
+                </div>
+                <nav>
+                    <a href="#About-me" id="nav-links">About Me</a>
+                    <a href="#Project" id="nav-links">Portfolio/Projects</a>
+                    <a href="#Experience" id="nav-links">Experience</a>
+                    <a href="#Goals" id="nav-links">Goals</a>
+    
+                </nav>
+            </div>
+            <div class="column-R-empty"><!--KEEP THIS DIV EMPTY--></div>
+            <div class="row" style="clear: left;">
+                <div class="column-R" style="clear: left; background-image: url(patrick.JPG);">
+                    <div id="About-me" class="tab-links">
+                        <h1>About Me</h1>
+                        <p>My name is Nathaniel Monroe Jr. I am an African-American teenager and a member of the LGBTQ community. 
+                            I am currently in the 11th grade. I enjoy changing my appearance as a form of self-expression. 
+                            I am passionate about the idea of becoming a therapist, 
+                            as I find value in providing support and guidance to others. 
+                            I have a strong desire to empathetically listen to people and assist them in navigating their emotions.
+                        </p>
+                        <div class="gallery">
+                            <img src="Hair 1.JPG" alt=" july 19 me right now">
+                            <img src="Hair 2.JPG" alt="july 12">
+                            <img src="Hair 3.JPG" alt=" july 10">
+                            <img src="Hair 4.JPG" alt=" july 9 ">
+                            <img src="Hair 5.JPG" alt="  june 27 blond and red hair">
+                            <img src="Hair 6.JPG" alt=" june 26 all blond">
+                            <img src="Hair 7.JPG" alt=" june 23 afram">
+                            <img src="Hair 8.JPG" alt=" june 16 Pride in the park">
+                            <img src="Hair 18.JPG" alt="june 14 pride parade ">
+                            <img src="Hair 10.JPG" alt="june 4 joker ">
+                            <img src="Hair 11.JPG" alt="may 26 favorite colors">
+                            <img src="Hair 12.JPG" alt="may 14 people loved the blue">
+                            <img src="Hair 13.JPG" alt="april 17 full pink">
+                            <img src="concert.jpg" alt="april 2 my first concert and its Nicki Minaj concert">
+                            <img src="Hair 14.JPG" alt="march 22 dyed a week before nicki minaj concert">
+                            <img src="Hair 15.JPG" alt="march 18 full red it was hard to get out">
+                            <img src="Hair 16.PNG" alt="october 22 2023 my hair journey">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" style="clear: right; height: 0;">
+                <!--KEEP THIS COLUMN EMPTY--></div>
+                <div class="column-R" style="clear: left; background-image: url(pk.JPG);">
+                    <div id="Projects" class="tab-links">
+                        <h1>Portfolio/Projects</h1>
+                        <div class="gallery">
+                            <a href=""><img src="rock paper sisscors.JPG"></a>
+                            <a href=""><img src="theromsat.JPG"></a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+
+            <!--copy from div class="row" to its closing div-->
+            <div class="row" style="clear: right;">
+                <div class="column-L" ><!--KEEP THIS COLUMN EMPTY--></div>
+                <div class="column-R" style="clear: left; background-image: url(pnk.JPG);">
+                    <div id="Experience">
+                        <h1>Experience</h1>
+                        <p>I possess a strong background in computer science, particularly in Python and HTML. Additionally, I have been 
+                            actively involved in various clubs, including robotics, science Olympiad, track and field, and 
+                            student government.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" style="clear: right;">
+                <div class="column-L" ><!--KEEP THIS COLUMN EMPTY--></div>
+                <div class="column-R" style="clear: left; background-image: url(pink.JPG);">
+                    <div id="Goals" class="tab-links">
+                        <h1>Goals</h1>
+                        <p class="tab-contents">>I am determined to achieve success as a black entrepreneur and empower my community. I am 
+                            committed to supporting all black kids and providing them with the same opportunities 
+                            that have been granted to me.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                var tablinks =document.getElementsByClassName("tablinks");
+                var tablinks =document.getElementsByClassName("tab-contents");
+                 
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+
+                }
+
+
+            </script>
+        </body>
+    </html>
